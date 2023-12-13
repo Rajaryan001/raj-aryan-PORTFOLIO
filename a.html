@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARYAN</title>
+  <link rel="icon" type="image/x-icon" href="./profile-pic.png">
+  <style>
+    body{
+      background-color: rgb(170, 181, 83);
+      padding: 0;
+      margin: 0;
+      font-family: monospace;
+    }
+    .container-first {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      position: relative;
+      text-align: center;
+    }
+    .aryan-text {
+      color: rgb(99, 111, 4);
+      font-size: 80px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .centered-image {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* filter: blur(20px); */
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+      filter: grayscale(100%) blur(0px);
+      transition: transform 0.6s ease-in;
+      mix-blend-mode: overlay; /*Other values: multiply, screen, darken, lighten, etc. */
+    }
+    
+    .centered-image:hover {
+        transform: scale(-0.6);
+        filter: grayscale(1%) blur(5px);
+
+}
+/* Add a media query to target tablet and mobile devices */
+@media screen and (max-width: 768px) {
+  .aryan-text {
+    font-size: 60px; 
+    margin-bottom: -100px; 
+  }
+
+  .centered-image {
+    width: 250px;
+    height: 250px; 
+  }
+}
+
+@media (hover: hover) {
+  /* Normal hover styles for devices that support hover */
+  .centered-image:hover {
+    transform: scale(-0.6);
+    filter: grayscale(1%) blur(5px);
+  }
+}
+
+@media (hover: none) {
+  /* Styles for touch devices where hover might not be supported */
+  .centered-image:active {
+    transform: scale(-0.6);
+    filter: grayscale(1%) blur(5px);
+  }
+}
+/* second div link */
+.vertical-links {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .vertical-links a {
+      text-decoration: none;
+      color: rgb(99, 111, 4);
+      font-size: 18px;
+      margin: 10px 0;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
+    .vertical-links a:before,
+    .vertical-links a:after {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: "";
+      position: absolute;
+      width: 100px;
+      height:3px;
+      background-color: rgb(99, 111, 4);
+      top: 50%;
+    }
+    .vertical-links a:before {
+      right: 100%;
+      margin-right: 10px;
+    }
+
+    .vertical-links a:after {
+      left: 100%;
+      margin-left: 10px;
+    }
+    .vertical-links a:hover {
+      color: #007bff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .vertical-links a {
+        font-size: 16px;
+      }
+    }
+    /* third section */
+    .container-third03{
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(11.25rem,100%), 1fr));
+        }
+        .intro03{
+          font-size: 1rem;
+            margin-left: 5px;
+            margin-right:2px;
+            text-align: left;
+            margin-top: 0px;
+
+        }
+        .intro_text{
+            background-color: antiquewhite;
+        }
+        .Interests03{
+            background-color: #ccc;
+        }
+        .column03 {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+        }
+        /* four last */
+        .container04{
+            display: flex;
+            height: 100vh;
+        }
+        .gray_row {
+            flex: 1;
+            background: linear-gradient(45deg,#ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #96ceb4 75%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text_row {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text_row p {
+            margin: 10px 0;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .social_media_icon{
+          display: flex;
+          justify-items: center;
+          align-items: center;
+        }
+        .social_media_icon a i{
+            font-size: 30px;
+            margin: 20px;
+            color: #ffcc5c;
+        }
+
+        .social_media_icon a:hover i {
+            color: #ff6f69;
+            transition: transform 0.6s ease-in-out;
+            transform: scale(-0.6);
+        }
+        /* five e */
+        .main_e{
+            display: flex;
+            height: 100vh;
+        }
+        .gray-row_e {
+            flex: 1;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            line-height: 1.5;
+            text-align: center;
+            /* background: linear-gradient(45deg,#ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #96ceb4 75%); */
+            background: linear-gradient(90deg,#96ceb4 20% 20%, #ff6f69 20% 40%, #3c3c3c 20% 60%, #ffcc5c 20% 80%, #ccc 20%);
+        }
+        .rotate-combined{
+            color: white;
+            transform: rotateZ(2700deg) rotateX(30deg);
+        } 
+
+        .work-journey {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .work-entry {
+            margin-bottom: -10px;
+            margin-top: -10px;
+        }
+
+        /* f six */
+        .main-container_f{
+          display: flex;
+        }
+        .gray-row_f {
+            flex: 1;
+            /* background: linear-gradient(45deg,#ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #96ceb4 75%); */
+            background: linear-gradient(90deg,#96ceb4 20% 20%, #ff6f69 20% 40%, #3c3c3c 20% 60%, #ffcc5c 20% 80%, #ccc 20%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .line_f{
+            width: 5px;
+            height: 270px;
+            background-color: black;
+            margin: 20px 0;
+        }
+
+        .second-part {
+            font-size: 18px;
+        }
+        .image-row_f {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .image_f {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        /* g */
+    .main_g {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    #newway_text{
+      margin-left: 20px;
+      margin-right: 20px;
+      background-color: rgb(170, 181, 83);
+      font-size: 1rem;
+      font-weight: 200;
+      text-align: justify;
+    }
+    @media only screen and (max-width: 768px) {
+      main_g{
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- first -->
+    <div class="hero">
+    <div class="container-first">
+      <div class="aryan-text">PORTFOLIO</div>
+      <img src="./RAJ.png" alt="Your Image" class="centered-image">
+    </div>
+</div>
+  <section >
+    <div class="vertical-links">
+      <a href="web_developer.html">Web Developer</a>
+      <a href="logo_designer.html">Logo Designer</a>
+      <a href="social_media.html">Social Media</a>
+    </div>
+  </section>
+<!-- third -->
+  <section>
+    <div class="container-third03">
+      <!-- First Column - Image -->
+      <!-- <div class="column03 image03">
+          <img src="./PicsArt_02-21-05.28.24.jpg" alt="Raj Aryan's Image">
+      </div> -->
+
+      <!-- Second Column - Text -->
+      <div class="column03 intro_text">
+          <p style="font-size: 30px; font-weight: bolder;"><strong style="font-size: 50px;"> Hello,</strong><br>I'm Raj Aryan</p>
+          <p class="intro03">
+              I'm Raj Aryan, a BCA student with expertise in Python programming and front-end development. Skilled in Microsoft PowerPoint, I work as a Business Development Associate at Socialmaven, where I coordinate projects and manage clients. Interested in web development and UI/UX design, I seek opportunities to contribute to innovative solutions that positively impact people's lives.
+          </p>
+      </div>
+
+      <!-- Third Column - Interests -->
+      <div class="column03 Interests03">
+          <p class="intro03"><strong>Interests:</strong><br>Digital drawing<br> Skiing<br>Sketching<br>Crafting</p>
+          <p class="intro03"><strong>Skills:</strong><br>Python<br>HTML5<BR>CSS<br>Javascripte<br>Microsoft Excel <br>Adobe Photoshop <br>Social Media Content Cretion <br>
+            Email Marketing <br>
+            Social Media Marketing <br>
+            Front-End Development <br></BR></p>
+      </div>
+  </div>
+  </section>
+   <!-- five -->
+   <section>
+    <div class="main_e">
+      <div class="gray-row_e">
+          <div >
+              <p class="rotate-combined">E<br>W<br><br>T<br>B<br>A <br><br>Y<br>R<br>O<br>T<br>S<br>I<br>S<br>H</p>
+          </div>
+      </div>
+  
+      <!-- Second Row - Work Journey -->
+      <div class="work-journey">
+          <div class="work-entry">
+              <p>Feb 2022 - Apr 2023</p>
+              <p>Python Developer</p>
+              <p>ZAMO (Part-time / Remote)</p>
+              <hr>
+          </div>
+          <div class="work-entry">
+              <p>Jul 2023 - Aug 2023</p>
+              <p>Social Media Marketing Intern</p>
+              <p>ZAMO (Internship / Remote)</p>
+              <hr>
+          </div>
+          <div class="work-entry">
+              <p>Apr 2023 - Sep 2023</p>
+              <p>Business Development Associate</p>
+              <p>Socialmaven | Influencer marketing agency <br> ( Remote / Part-time)</p>
+          </div>
+      </div>
+  </div>
+  </section>
+  <!-- six f -->
+  <section>
+    <div class="main-container_f">
+      <div class="gray-row_f">
+      <p style="font-size: 30px;">Logo Design</p>
+      <p>Potter, a clothing brand</p>
+      <div class="line_f"></div>
+      <p class="second-part">Year 2023<br>Software used: Photoshop</p>
+  </div>
+<!-- Second Row - Image Row -->
+  <div class="image-row_f">
+      <img class="image_f" src="./O.png" alt="Image 1">
+      <img class="image_f" src="./potter.png" alt="Image 2">
+  </div>
+</div>
+  </section>
+  <main class="main_g">
+    <img src="./ooo.gif" alt="Your GIF">
+  </main>
+
+  <section>
+    <div class="container-third03">
+      <div id="newway_text" class="column03 newway_text " style="color: white;">
+          <p style="font-size: 80px;" >New Way</p>
+          <p >YEAR 2023 <br>SOFTWARE USED <br>Photoshop <br><br>
+          clothing Brland</p>
+      </div>
+
+        <div class="column image-row">
+            <div class="image-container">
+                <img src="./newway.png" alt="Image 1">
+            </div>
+        </div>
+  </div>
+</section>
+  <!-- four last-->
+  <section>
+    <!-- First Row - Gray Row -->
+    <div class="container04">
+      <div class="gray_row">
+          <!-- Empty Gray Row -->
+      </div>
+      <!-- Second Row - Text -->
+      <div class="text_row">
+          <p style="font-size: 80px;">THANK YOU</p>
+          <p style="font-size: 40px;">& I Can't wait to hear about you as well!!</p>
+          <br>
+          <strong>Contact me</strong>
+          <p>Email: rockaryanhjp000@gmail.com</p>
+          <p>Phone: +91 865-157-7312</p>
+          <p>Bihar/Patna</p>
+          <div class="social_media_icon">
+            <a href="https://www.instagram.com/rajarya_109/"><i class="fa-brands fa-instagram" class="last_icon"></i></a>
+            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B7Kq7Tc1DRTi5Bt7Rh8VrUw%3D%3D"><i class="fa-brands fa-linkedin-in" class="last_icon"></i></a>
+            <a href=""><i class="fa-brands fa-github" class="last_icon"></i></a>
+        </div>
+      </div>
+      
+  </div>
+  </section>
+
+</body>
+</html>
